@@ -21,7 +21,6 @@ pub fn init_panic_hook() {
     console_error_panic_hook::set_once();
 }
 
-#[wasm_bindgen]
 pub fn new_thread_pool(concurrency: usize, pool: &WorkerPool) -> ThreadPool {
     rayon::ThreadPoolBuilder::new()
         .num_threads(concurrency - 1)
@@ -30,10 +29,3 @@ pub fn new_thread_pool(concurrency: usize, pool: &WorkerPool) -> ThreadPool {
         .unwrap()
 }
 
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
-}
