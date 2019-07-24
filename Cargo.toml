@@ -9,7 +9,7 @@ categories = ["concurrency", "config", "wasm"]
 keywords = ["wasm", "web", "worker"]
 description = "A simple crate implementing web workers to run rayon-styled concurrent work on wasm."
 readme = "README.md"
-license = "Mozilla"
+license = "MPL-2.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
