@@ -15,6 +15,8 @@ use web_sys::{ErrorEvent, Event, Worker};
 
 use crate::log;
 
+/// The `WorkerPool`. This is a special type of thread pool that works on wasm and provide a way to
+/// run work they way rayon does it.
 #[wasm_bindgen]
 pub struct WorkerPool {
     state: Rc<PoolState>,
