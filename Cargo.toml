@@ -3,6 +3,10 @@ name = "web_worker"
 version = "0.1.0"
 authors = ["Joël Lupien (Jojolepro) <jojolepromain@gmail.com>"]
 edition = "2018"
+documentation = "https://docs.rs/web_worker"
+repository = "https://github.com/jojolepro/web_worker"
+categories = ["concurrency", "config", "wasm"]
+keywords = ["wasm", "web", "worker"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
