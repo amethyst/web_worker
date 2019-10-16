@@ -32,7 +32,7 @@ pub fn init_panic_hook() {
 /// and the concurrency value, which indicates the number of threads to use.
 pub fn new_thread_pool(concurrency: usize, pool: &WorkerPool) -> ThreadPool {
     rayon::ThreadPoolBuilder::new()
-        .num_threads(concurrency - 1)
+        .num_threads(concurrency)
         .spawn_handler(|thread| Ok(pool.run(|| thread.run()).unwrap()))
         .build()
         .unwrap()
