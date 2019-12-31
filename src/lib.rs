@@ -1,3 +1,5 @@
+//! Utilities to work with web workers and rayon.
+
 use rayon::ThreadPool;
 use wasm_bindgen::prelude::*;
 
