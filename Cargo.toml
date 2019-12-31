@@ -16,11 +16,11 @@ license = "MPL-2.0"
 [dependencies]
 console_error_panic_hook = "0.1"
 futures = "0.1"
-js-sys = "0.3.24"
+js-sys = "0.3.33"
 rayon = "1.1.0"
 rayon-core = "1.5.0"
-wasm-bindgen = { version = "0.2.47", features = ['serde-serialize'] }
-wasm-bindgen-futures = "0.3.24"
+wasm-bindgen = { version = "0.2.56", features = ['serde-serialize'] }
+wasm-bindgen-futures = "0.4.6"
 
 [dependencies.web-sys]
 version = "0.3.4"
@@ -36,8 +36,3 @@ features = [
   'MessageEvent',
 ]
 
-[patch.crates-io]
-wasm-bindgen = { path = '../wasm-bindgen' }
-wasm-bindgen-futures = { path = '../wasm-bindgen/crates/futures' }
-js-sys = { path = '../wasm-bindgen/crates/js-sys' }
-web-sys = { path = '../wasm-bindgen/crates/web-sys' }
