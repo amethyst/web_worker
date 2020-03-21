@@ -297,4 +297,3 @@ pub fn child_entry_point(ptr: u32) -> Result<(), JsValue> {
     global.post_message(&JsValue::undefined())?;
     Ok(())
 }
-
